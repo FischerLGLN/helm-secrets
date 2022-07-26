@@ -1,3 +1,8 @@
-podAnnotations:
-  # https://github.com/variantdev/vals#vault
-  secret3: ref+vault://secret/test?version=2#/mykey
+name: "local"
+address: "https://kubernetes.default.svc"
+values: |
+    podAnnotations:
+      # https://github.com/variantdev/vals#vault
+      secret3: ref+vault://secret/test?version=2#/mykey
+
+
